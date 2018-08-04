@@ -31,7 +31,7 @@ module Liquid
   VariableSegment             = /[\w\-]/
   VariableStart               = /\[/
   VariableEnd                 = /\]/
-  VariableIncompleteEnd       = /\}\}?/
+  VariableIncompleteEnd       = /\]/
   QuotedString                = /"[^"]*"|'[^']*'/
   QuotedFragment              = /#{QuotedString}|(?:[^\s,\|'"]|#{QuotedString})+/o
   TagAttributes               = /(\w+)\s*\:\s*(#{QuotedFragment})/o
